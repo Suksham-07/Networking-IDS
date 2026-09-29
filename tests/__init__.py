@@ -1,0 +1,3 @@
+"""
+NexIDS - tests package
+"""

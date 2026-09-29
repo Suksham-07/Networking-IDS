@@ -1,0 +1,1297 @@
+2026-09-30 00:16:59  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: simulated error
+2026-09-30 00:16:59  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:16:59  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:16:59  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:16:59  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:16:59  [36mDEBUG[0m  app.capture.packet_parser  Parsed 0 / 3 packets successfully.
+2026-09-30 00:16:59  [36mDEBUG[0m  app.capture.packet_parser  Parsed 3 / 3 packets successfully.
+2026-09-30 00:16:59  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:16:59  [36mDEBUG[0m  app.capture.packet_parser  Parsed 2 / 3 packets successfully.
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=eth0  filter='tcp'  limit=500  timeout=60s
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  Packet capture started.
+2026-09-30 00:16:59  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:16:59  [33mWARNING[0m  app.capture.packet_capture  stop() called but capture is not running.
+2026-09-30 00:17:46  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: simulated error
+2026-09-30 00:17:46  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:17:46  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:17:46  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:17:46  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:17:46  [36mDEBUG[0m  app.capture.packet_parser  Parsed 0 / 3 packets successfully.
+2026-09-30 00:17:46  [36mDEBUG[0m  app.capture.packet_parser  Parsed 3 / 3 packets successfully.
+2026-09-30 00:17:46  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:17:46  [36mDEBUG[0m  app.capture.packet_parser  Parsed 2 / 3 packets successfully.
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=eth0  filter='tcp'  limit=500  timeout=60s
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  Packet capture started.
+2026-09-30 00:17:47  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:17:47  [33mWARNING[0m  app.capture.packet_capture  stop() called but capture is not running.
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 3 distinct ports in 10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.2 — 5 distinct ports in 10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 5.6.7.8 — 3 distinct ports in 10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 1.1.1.1 — 3 ICMP packets in 5.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 2.2.2.2 — 3 ICMP packets in 5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 10.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:25:43  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:43  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.5 — 5 ICMP packets in 5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=3  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=5  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.10 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.5 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.9 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=50  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=10000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=10000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=10000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=999999  bps=999999999  window=60.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=10000  bps=100000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=10000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=10000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.3 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine processed 10 packets → 2 events.
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 1.2.3.4 — 5 distinct ports in 10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 10.0.0.2 — 5 ICMP packets in 5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 5 ICMP packets in 5.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine processed 16 packets → 5 events.
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 11 distinct ports in 10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=1000000  window=1.0s
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:25:44  [36mDEBUG[0m  app.detection.engine  DetectionEngine: all detector states cleared.
+2026-09-30 00:25:44  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second', 'bytes_per_second']
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.2 — 5 distinct ports in 10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 5.6.7.8 — 3 distinct ports in 10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 3 distinct ports in 10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 1.1.1.1 — 3 ICMP packets in 5.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 2.2.2.2 — 3 ICMP packets in 5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=30.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 30.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.5 — 5 ICMP packets in 5.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=3  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=5  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.10 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.5 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.9 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=50  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:48  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=999999  bps=999999999  window=60.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['unique_destinations']
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=500  bps=500000  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.3 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine processed 10 packets → 1 events.
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 10.0.0.2 — 5 ICMP packets in 5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 5 ICMP packets in 5.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine processed 16 packets → 2 events.
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:28:49  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:28:49  [36mDEBUG[0m  app.detection.engine  DetectionEngine: all detector states cleared.
+2026-09-30 00:29:02  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: simulated error
+2026-09-30 00:29:02  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:29:02  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:29:02  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:29:02  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:29:02  [36mDEBUG[0m  app.capture.packet_parser  Parsed 0 / 3 packets successfully.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.capture.packet_parser  Parsed 3 / 3 packets successfully.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.capture.packet_parser  Parsed 2 / 3 packets successfully.
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=eth0  filter='tcp'  limit=500  timeout=60s
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  Packet capture started.
+2026-09-30 00:29:02  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:29:02  [33mWARNING[0m  app.capture.packet_capture  stop() called but capture is not running.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.2 — 5 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 5.6.7.8 — 3 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 3 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 1.1.1.1 — 3 ICMP packets in 5.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 2.2.2.2 — 3 ICMP packets in 5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=30.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 30.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.5 — 5 ICMP packets in 5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=3  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=5  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.10 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.5 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.9 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=50  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=999999  bps=999999999  window=60.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['unique_destinations']
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=500  bps=500000  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.3 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine processed 10 packets → 1 events.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 10.0.0.2 — 5 ICMP packets in 5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 5 ICMP packets in 5.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine processed 16 packets → 2 events.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:29:02  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:29:02  [36mDEBUG[0m  app.detection.engine  DetectionEngine: all detector states cleared.
+2026-09-30 00:37:05  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: simulated error
+2026-09-30 00:37:05  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:37:05  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:37:05  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:37:05  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:37:05  [36mDEBUG[0m  app.capture.packet_parser  Parsed 0 / 3 packets successfully.
+2026-09-30 00:37:05  [36mDEBUG[0m  app.capture.packet_parser  Parsed 3 / 3 packets successfully.
+2026-09-30 00:37:05  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:37:05  [36mDEBUG[0m  app.capture.packet_parser  Parsed 2 / 3 packets successfully.
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=eth0  filter='tcp'  limit=500  timeout=60s
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  Packet capture started.
+2026-09-30 00:37:05  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:37:05  [33mWARNING[0m  app.capture.packet_capture  stop() called but capture is not running.
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.2 — 5 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 5.6.7.8 — 3 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 3 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 1.1.1.1 — 3 ICMP packets in 5.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 2.2.2.2 — 3 ICMP packets in 5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=30.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 30.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.5 — 5 ICMP packets in 5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=3  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=5  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.10 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.5 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.9 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=50  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=999999  bps=999999999  window=60.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['unique_destinations']
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=500  bps=500000  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.3 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine processed 10 packets → 1 events.
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 10.0.0.2 — 5 ICMP packets in 5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 5 ICMP packets in 5.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine processed 16 packets → 2 events.
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:37:06  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:37:06  [36mDEBUG[0m  app.detection.engine  DetectionEngine: all detector states cleared.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.80).
+2026-09-30 00:41:36  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: event confidence (0.50) below threshold (0.80) — ignored.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 8fcabf04-c191-43a9-8e0b-ded9d2523c81)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.0, ID: 4f0ecda2-2ea0-4521-9221-15adcab6ec67)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: c5c941b0-d76a-4149-b058-99d0f81673ec)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.2, ID: 8d8f1a6c-e850-4193-b5d0-e91c0a2363a4)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.3, ID: adf0c0dc-0a91-4989-9548-d434b9364fd6)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.4, ID: b21a9500-7546-4c3a-afbb-0443b88fc16a)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 5 events → 5 unique alerts.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: received invalid or None event.
+2026-09-30 00:41:36  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: received invalid or None event.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.99, ID: 03ac2909-42c5-41e0-86b1-f8047f034739)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: b265d8ae-3990-4e0d-b8cb-07510d5e9319)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 083572f2-9339-448d-94c3-e4770cb3c5e0)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=5.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 39af5365-30bb-4afb-ae36-d387c6a982d5)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 362b9490-6351-4515-b2b5-9b3d1e34a430)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: afa33579-a7a5-41dc-9e20-37260a978c54)
+2026-09-30 00:41:36  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: coalesced event for 192.168.1.10 (Potential Port Scan) into alert afa33579-a7a5-41dc-9e20-37260a978c54 (count=2).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 98cf6cb7-92ea-4621-8171-544d1c9a6117)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 192.168.1.10, ID: 5b4c9cc5-9a87-4402-835b-1472d52512c2)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 4f303bd2-e01c-409e-ba1e-62bc9fcb0624)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.20, ID: 11869cb6-dd3e-4cf1-a7b1-38ff0b6ccc73)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: b7751864-efbf-48fa-b609-d32aad53f547)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: f5771b96-c172-4cbc-ac31-2c3b3bf92cca)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 485eff6c-a3dc-4e82-809d-4cd7276f6ed8)
+2026-09-30 00:41:36  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: all alerts and active aggregation state cleared.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 1a9b9963-9a95-461f-a7db-0d6b87ae3504)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 4e300b1e-29e7-4d00-97e9-ed8f9591cf06)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: f989e3ee-749c-4fd3-a7e0-db160da90817)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.0, ID: 52fcb4b0-2817-4886-afb0-b27b18ec6731)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 5c0670ec-487b-4aa3-bd92-6431eed4cda3)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.2, ID: 4fbb661f-bb3f-41ba-bd45-73158ebdde44)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.3, ID: 45ea6c1b-d769-4f93-a82f-5ab2c81de8f7)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.4, ID: 9c03093c-bf76-429f-8ae2-97d260df58c8)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 8fc81b60-162b-48bd-b584-c0d21b02f97e)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 449b6657-20e4-426a-bf70-dd2997c589f7)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: e7877677-f2ff-4508-bad0-89aee8739721)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: c44dcdfe-6b6b-4157-a423-a1561324d788)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 2365d7e7-098e-45d8-a562-7a6cc68f696b)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 79922c38-a643-47a7-addb-5b55fa0cb34e)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 79e44517-fc12-428e-83b4-12fe19f9772f)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 990dc96e-1d6d-40ab-a284-130f7b27ab6a)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 75d99c25-9375-482b-9d6a-1b7faeec012f)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: d761a58b-5525-4655-9032-c76ecb1ad437)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: b9f3b418-be97-4a72-9601-ff33d6d9373c)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: dcaa3335-75af-4079-a960-190fecbbdb5b)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: a332cfe6-e398-408c-89fd-275175472af3)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 94ae38f3-75a9-4068-8330-be49155b2d8c)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 51ad8a3f-39d8-425d-af47-6fe16abe1110)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 41b737fd-a0c9-4956-9d9a-566221bf5657)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 6232fb77-357d-44d9-907e-003f000b6198)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 297a7487-9e12-4aa3-acb5-7a21eecf4824)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 5473a025-7719-4769-8b13-f2fc7e379a62)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: eb491c12-342a-4ad0-8c8e-eb11cd24a6b9)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 3389a90c-a942-48e5-9add-c500ddacc06c)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 5e8b1efb-11a4-4665-bf9c-ed867ad6ba1a)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 3520d9df-9fcb-479e-94a0-7251671bf40f)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: ebc39c09-deee-4cc1-bfb2-bbfaff615c34)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: fc9116c3-c64d-4af0-afdc-2e148d4c408d)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 6124bd60-3c98-45f1-a7f2-27963e9234ac)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 95bacfde-472e-4ec5-ba8c-1caa7de5d263)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert fc9116c3-c64d-4af0-afdc-2e148d4c408d status updated to 'ACKNOWLEDGED'.
+2026-09-30 00:41:36  [33mWARNING[0m  app.alert_engine.alert_manager  Invalid alert status 'BAD_STATUS' requested.
+2026-09-30 00:41:36  [33mWARNING[0m  app.alert_engine.alert_manager  Alert ID 'missing-id' not found for status update.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [33mWARNING[0m  app.alert_engine.alert_manager  Error in alert callback <function TestAlertCallbacks.test_callback_exception_does_not_crash.<locals>.failing_cb at 0x000001FD06B4D4E0>: Callback boom!
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 3db5aa93-fb8f-4333-8ab8-26b2f25b8b60)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.20.30.40, ID: af640ae8-af72-4ba3-bfff-7db7d5f30350)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 1a9ff81c-4960-489d-9800-3b7e16bbc265)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 1.2.3.4, ID: 6350c4b1-1f01-489a-b32a-ed6921f531dc)
+2026-09-30 00:41:36  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:41:36  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:41:36  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:41:36  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:41:36  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.1 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential ARP Anomaly (Source: 192.168.1.1, ID: 5fb23703-d903-4927-bf4f-8c71f08c4b93)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 1 events → 1 unique alerts.
+2026-09-30 00:41:36  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:41:36  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:41:36  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:41:36  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:41:36  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:41:36  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.50 — 5 distinct ports in 10.0s
+2026-09-30 00:41:36  [32mINFO[0m  app.detection.engine  DetectionEngine processed 6 packets → 1 events.
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 0f425c44-c9c8-4668-b912-e6798c21aeea)
+2026-09-30 00:41:36  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 1 events → 1 unique alerts.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.80).
+2026-09-30 00:44:28  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: event confidence (0.50) below threshold (0.80) — ignored.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: cde861b0-6bce-4d7a-bd3d-a99bf18692f2)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.0, ID: 4c8ae972-4ffd-4b05-a3a5-24044d1cdc95)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: bd205abc-d157-4ea6-b423-507839bcf395)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.2, ID: ec7cbfad-4104-4568-87da-d8132a3f89ab)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.3, ID: 6bb6e93c-ae39-4a52-8b84-7816f3b84e87)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.4, ID: c4aa147e-a42e-4cff-835a-6375a8ba843e)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 5 events → 5 unique alerts.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: received invalid or None event.
+2026-09-30 00:44:28  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: received invalid or None event.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.99, ID: a8b4c8d8-8e39-4616-8d59-e3b314284b3a)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 4c848a09-84db-4b6d-87dd-2d5e8773c8cf)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 0b0c8731-73c6-45f7-b253-d441f54bbbce)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=5.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 3ffaba26-384d-41ae-b328-aba78bc92792)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 626015a2-4bea-4bc6-baa3-825186b71f12)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: d147b9bb-5d2a-43f5-9fb0-c2599a8c01af)
+2026-09-30 00:44:28  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: coalesced event for 192.168.1.10 (Potential Port Scan) into alert d147b9bb-5d2a-43f5-9fb0-c2599a8c01af (count=2).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 46e03dfd-02c1-4617-88c6-afed2334ce0a)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 192.168.1.10, ID: 627ab57c-50dc-4728-8813-09a6cb10215c)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 2830551b-c82e-4f14-93be-7c2a1063dd0e)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.20, ID: 2693772f-24b3-41a9-867e-256716ed04b2)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: fed3e6ec-340b-4d61-9f0f-01e3b159532a)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: f965a248-338a-47f9-896c-af3834dc6af5)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 1a85ecc4-977a-49b9-b4a7-567215e098b7)
+2026-09-30 00:44:28  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: all alerts and active aggregation state cleared.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 72177229-50d4-4e7f-b687-48b8c416af8f)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 883560bf-e14d-4869-896d-e51a4221a1f2)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 7a1237d3-bad3-4e9b-8251-240541c1c2c8)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.0, ID: ee5860e9-c3b2-4f00-8174-4952399488a9)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 965aeaa8-1ad5-43a6-8c32-0285d32e6884)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.2, ID: 431637bc-d67f-4300-bbab-5a1016bbd05c)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.3, ID: a38a897b-20a0-42d0-80e0-4191e914f025)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.4, ID: 90a82d0c-3862-4b3e-916a-cbe9cc1ae729)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 0a92430b-5e45-445d-9774-fc7420758aec)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 53dcbc6e-0c64-4c8e-a4f6-98a72e7d1507)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 1583e7ee-e587-4fa4-a96c-42ee82433666)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: f31e014c-4a76-46ec-9622-29ea2a98d323)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 0ce49ef8-0908-4b73-bc6c-94cfd50ce905)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: a11dc25c-d781-46a8-9090-7ab629e6f01b)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 7721401b-4575-4d32-bf04-0a5bdada7bfc)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 07754785-29f1-41b2-9e94-448718278890)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 5c5fc95d-c474-460b-9b31-e343b50b2cf3)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: f1e89220-076d-4c12-9aa5-ec60d39a1650)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: e51853b9-90f6-4e2b-b462-ae50771da89e)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: d2b3a8c0-3a64-4db6-8b1f-67c246f1b6ca)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 73c6bb1c-3cd4-4c9c-a0b6-61ee4bf0db54)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: bacd71f5-ae30-46f3-86a8-a8737a2a82d5)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: d9911930-0705-44a9-aee1-1b89c0de824a)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: b1471800-e596-4462-a1c0-11fe61c68bf8)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 4da75076-2a20-402c-a5af-024bf3704683)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 8eac0674-aece-4de8-8408-94fbd81f456d)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 9518fdf9-2eb1-4ddb-a95c-b2d928f7350c)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 81b6b6dc-ea9a-478e-8f91-1ee895803e58)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: efa675a7-f675-40eb-b773-d3d673609bbe)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 6860c2d1-15b5-4dbf-a83b-0ad2dca4b72e)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: c29d0937-bd14-4cb1-bce2-95ece79b687e)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 8fbd7fdb-c0da-4c9d-9bfa-70f04b625ba1)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 1df099e9-afff-443d-94b5-57c291a15b72)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 9aa2ad8d-b586-49e6-8dbc-a71eb4a51173)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 8ef9e348-7463-4f02-9e7b-fe779839807b)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert 1df099e9-afff-443d-94b5-57c291a15b72 status updated to 'ACKNOWLEDGED'.
+2026-09-30 00:44:28  [33mWARNING[0m  app.alert_engine.alert_manager  Invalid alert status 'BAD_STATUS' requested.
+2026-09-30 00:44:28  [33mWARNING[0m  app.alert_engine.alert_manager  Alert ID 'missing-id' not found for status update.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [33mWARNING[0m  app.alert_engine.alert_manager  Error in alert callback <function TestAlertCallbacks.test_callback_exception_does_not_crash.<locals>.failing_cb at 0x000001C4700781A0>: Callback boom!
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 4cd25f5b-0fff-4b65-a53b-1b079236dbb4)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.20.30.40, ID: 6f7cf5ed-6532-452b-a1f0-fb002e39ca13)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 1f8afafe-2927-4cf2-af1d-84f61334cc3e)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 1.2.3.4, ID: 43f6d14b-72e2-4dd0-bc63-114592e03143)
+2026-09-30 00:44:28  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:28  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:28  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:44:28  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:44:28  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.1 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 192.168.1.1, ID: cc0b5334-c21d-4fd1-bf16-b5f20999a470)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 1 events → 1 unique alerts.
+2026-09-30 00:44:28  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:28  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:28  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:44:28  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:44:28  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:44:28  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.50 — 5 distinct ports in 10.0s
+2026-09-30 00:44:28  [32mINFO[0m  app.detection.engine  DetectionEngine processed 6 packets → 1 events.
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 1c629388-c85a-4c4d-bcfe-45875535c2e0)
+2026-09-30 00:44:28  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 1 events → 1 unique alerts.
+2026-09-30 00:44:28  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: simulated error
+2026-09-30 00:44:28  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:44:28  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:44:28  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:44:28  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:44:28  [36mDEBUG[0m  app.capture.packet_parser  Parsed 0 / 3 packets successfully.
+2026-09-30 00:44:28  [36mDEBUG[0m  app.capture.packet_parser  Parsed 3 / 3 packets successfully.
+2026-09-30 00:44:28  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:44:28  [36mDEBUG[0m  app.capture.packet_parser  Parsed 2 / 3 packets successfully.
+2026-09-30 00:44:28  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=eth0  filter='tcp'  limit=500  timeout=60s
+2026-09-30 00:44:28  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:28  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:28  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:28  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:28  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:28  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:44:28  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:28  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:29  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:29  [32mINFO[0m  app.capture.packet_capture  Packet capture started.
+2026-09-30 00:44:29  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:44:29  [33mWARNING[0m  app.capture.packet_capture  stop() called but capture is not running.
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.2 — 5 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 5.6.7.8 — 3 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 3 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 1.1.1.1 — 3 ICMP packets in 5.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 2.2.2.2 — 3 ICMP packets in 5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=30.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 30.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.5 — 5 ICMP packets in 5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=3  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=5  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.10 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.5 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.9 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=50  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=999999  bps=999999999  window=60.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['unique_destinations']
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=500  bps=500000  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.3 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine processed 10 packets → 1 events.
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 10.0.0.2 — 5 ICMP packets in 5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 5 ICMP packets in 5.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine processed 16 packets → 2 events.
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:44:29  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:44:29  [36mDEBUG[0m  app.detection.engine  DetectionEngine: all detector states cleared.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.80).
+2026-09-30 00:45:59  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: event confidence (0.50) below threshold (0.80) — ignored.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 39f828e3-a06e-4752-a4e4-e3d7b5456c2c)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.0, ID: cfe495e1-77dd-4cba-8cf3-9a760ea29407)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 2b26de72-dd74-4064-8f6c-6d9d4faeb7bc)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.2, ID: fa5caff7-3d27-4120-9f7d-e7bc33c8275d)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.3, ID: 3f009f9c-c1e8-41fd-9d0a-2e9fac138e0d)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.4, ID: 51194023-bcfe-4483-83a1-f8d0b9c18282)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 5 events → 5 unique alerts.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: received invalid or None event.
+2026-09-30 00:45:59  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: received invalid or None event.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.99, ID: cce08e37-e875-400d-996c-f79866c6de8b)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: c91d95a3-044b-4732-86f1-f25e91d33978)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: fb89bac5-0af0-4c3e-87bf-49f738fb0805)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=5.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: eb013f06-70c5-4131-af63-16fde558fd7b)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 8329f80e-d497-402c-988a-8a17f1349573)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 778db852-bb5c-48ff-b95b-11eb65c720f4)
+2026-09-30 00:45:59  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: coalesced event for 192.168.1.10 (Potential Port Scan) into alert 778db852-bb5c-48ff-b95b-11eb65c720f4 (count=2).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: ac65ea38-c496-4441-a8a2-90f8b4c883d1)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 192.168.1.10, ID: dee763f0-ff15-4f7c-a150-a3b45db3430f)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.10, ID: 49f3f3e9-f36b-41fa-aef1-0e15eecced06)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.20, ID: b0c299f8-97bc-49ca-9a8f-8219d8d5b169)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 1fb06bac-3de9-4979-a152-74298f7cfa8c)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 09325e9f-8bb9-460b-a9d6-2b3ca9afdd4f)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: c0c5b8ff-0a72-4100-8b10-01f4d3631d8d)
+2026-09-30 00:45:59  [36mDEBUG[0m  app.alert_engine.alert_manager  AlertManager: all alerts and active aggregation state cleared.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 4f30ffa8-5748-4f88-ba97-5f4b9f733855)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 76978132-3f5d-4939-8c86-181b96f32d6b)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: b83b044b-a414-4c8e-aced-896f670e8127)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.0, ID: f6e4ffa2-cf91-4209-8c06-2a7a3c76176e)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: c2ac97ea-8d68-4a3f-92c6-1b129274ef0f)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.2, ID: 808f0a06-61c7-4b0a-90d9-4f76cae18ae7)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.3, ID: 9fca1f55-5650-4477-b710-9981b60d790a)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.4, ID: 4f615035-8147-47f3-a9b2-47e239fd5819)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 5c5dfd0c-857c-4eac-8cba-38cb55dabdac)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 750aa752-516d-4acb-8aa2-57c8a0325663)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 4b08b378-78c1-41ff-bbcc-4152642cb9f7)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 27876507-172b-47d3-9018-fded44e2424d)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 780ffa89-15de-4b33-9935-a0a72256be42)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: c3e9407e-f110-427b-ac38-c17dcf655437)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 84683346-8c03-4423-9632-efb0c226116b)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 35eaa4cf-3e43-405c-9664-d68ad6ad2afd)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 283f8a8a-f075-410e-8087-ff077e3524f1)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 8188be7b-69bb-43f3-8fc6-4db360b7c854)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 3a072476-7981-4935-b6c8-53e41532fd31)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: af335e03-4b99-410a-936d-8fb3c5873360)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: d6eba575-8d05-40bc-9720-fee06a52b256)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: e26cf649-9b0f-4616-8f8c-d6c447561523)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: dc24f0ea-38c5-4a4d-aa80-805f0f391e4f)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 2997cb32-48b9-4e8c-a025-aeec03405a06)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 5a1eac1e-e769-476e-9891-2b603e5f0cb9)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 8be06eca-9360-49aa-a721-2d3c6ee2cd08)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 9a6e1ad3-5443-4677-ae27-8c630b298a66)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: 3b4995bf-e45f-4f61-9ac6-3067a864a141)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 2021ed37-5b05-4228-af64-a2c1f5ec2597)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: b571321e-75a6-47c8-88ab-2a2bbc0b5fce)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: df28445d-957e-4e03-b63e-c75c2fc25a3c)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 3c9430fb-6bbd-4610-aab5-fe807c56505d)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.0.0.1, ID: 03b364f4-5e1f-4797-8f6b-ed6e347b9155)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [LOW] Unusual ICMP Activity (Source: 10.0.0.2, ID: edd88336-4bc4-486e-9e5c-e867747b8532)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 10.0.0.1, ID: 597c2896-b147-46b4-a49d-097e51c6212b)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert 03b364f4-5e1f-4797-8f6b-ed6e347b9155 status updated to 'ACKNOWLEDGED'.
+2026-09-30 00:45:59  [33mWARNING[0m  app.alert_engine.alert_manager  Invalid alert status 'BAD_STATUS' requested.
+2026-09-30 00:45:59  [33mWARNING[0m  app.alert_engine.alert_manager  Alert ID 'missing-id' not found for status update.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [33mWARNING[0m  app.alert_engine.alert_manager  Error in alert callback <function TestAlertCallbacks.test_callback_exception_does_not_crash.<locals>.failing_cb at 0x000002180FDB8F60>: Callback boom!
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 65d6b691-aab4-4bf7-bfd7-b09d51c73500)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 10.20.30.40, ID: dd5c6ce8-a809-4874-814d-96af1d9a7534)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=False, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 910ce3d4-a8cf-4e6d-bd64-a89aa485df15)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 1.2.3.4, ID: 0491454e-a00e-48e9-994b-71e52bafd3df)
+2026-09-30 00:45:59  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:45:59  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:45:59  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:45:59  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:45:59  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.1 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [HIGH] Potential ARP Anomaly (Source: 192.168.1.1, ID: 9a629ef4-d5cd-4e26-8d02-bf1605b1ba8e)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 1 events → 1 unique alerts.
+2026-09-30 00:45:59  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:45:59  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:45:59  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:45:59  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:45:59  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager initialised (aggregation=True, window=10.0s, min_confidence=0.00).
+2026-09-30 00:45:59  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.50 — 5 distinct ports in 10.0s
+2026-09-30 00:45:59  [32mINFO[0m  app.detection.engine  DetectionEngine processed 6 packets → 1 events.
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  Alert generated: [MEDIUM] Potential Port Scan (Source: 192.168.1.50, ID: 7e2db028-df16-485d-9275-99d17a8e22dc)
+2026-09-30 00:45:59  [32mINFO[0m  app.alert_engine.alert_manager  AlertManager processed 1 events → 1 unique alerts.
+2026-09-30 00:46:00  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: simulated error
+2026-09-30 00:46:00  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:46:00  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:46:00  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:46:00  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:46:00  [36mDEBUG[0m  app.capture.packet_parser  Parsed 0 / 3 packets successfully.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.capture.packet_parser  Parsed 3 / 3 packets successfully.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.capture.packet_parser  parse_packet received None — skipping.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.capture.packet_parser  Parsed 2 / 3 packets successfully.
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=eth0  filter='tcp'  limit=500  timeout=60s
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [33mWARNING[0m  app.capture.packet_parser  Failed to parse packet: boom
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  Packet capture started.
+2026-09-30 00:46:00  [32mINFO[0m  app.capture.packet_capture  PacketCapture initialised — interface=auto  filter='(none)'  limit=0  timeout=0s
+2026-09-30 00:46:00  [33mWARNING[0m  app.capture.packet_capture  stop() called but capture is not running.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.2 — 5 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 5.6.7.8 — 3 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=15  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 3 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=3  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 3 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 1.1.1.1 — 3 ICMP packets in 5.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 2.2.2.2 — 3 ICMP packets in 5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=50  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=30.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 30.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=3  window=5.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 3 ICMP packets in 5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.5 — 5 ICMP packets in 5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=3  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=5  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=20  reply_threshold=10  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 192.168.1.10 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.5 was 11:11:11:11:11:11, now 22:22:22:22:22:22
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.9 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=50  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=999999  bps=999999999  window=60.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['unique_destinations']
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=1000  bps=1000000  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=500  bps=500000  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.traffic_anomaly  Traffic Anomaly triggered — violations: ['packets_per_second']
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.arp_detection  ARP mapping change: IP 10.0.0.3 was aa:aa:aa:aa:aa:aa, now bb:bb:bb:bb:bb:bb
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine processed 10 packets → 1 events.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 10.0.0.2 — 5 ICMP packets in 5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.icmp_detection  Unusual ICMP Activity triggered for 192.168.1.10 — 5 ICMP packets in 5.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine processed 16 packets → 2 events.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 10.0.0.1 — 5 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.port_scan  PortScanDetector initialised — threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.icmp_detection  ICMPDetector initialised — threshold=5  window=5.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.arp_detection  ARPDetector initialised — req_threshold=10  reply_threshold=5  window=10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.traffic_anomaly  TrafficAnomalyDetector initialised — pps=50  bps=999999999  window=1.0s
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.engine  DetectionEngine initialised with 4 detectors.
+2026-09-30 00:46:00  [32mINFO[0m  app.detection.port_scan  Potential Port Scan triggered for 192.168.1.10 — 5 distinct ports in 10.0s
+2026-09-30 00:46:00  [36mDEBUG[0m  app.detection.engine  DetectionEngine: all detector states cleared.
