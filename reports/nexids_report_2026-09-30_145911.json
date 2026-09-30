@@ -1,0 +1,444 @@
+{
+  "metadata": {
+    "report_title": "NexIDS Security Audit & Incident Report",
+    "nexids_version": "0.1.0",
+    "project_name": "NexIDS",
+    "report_timestamp": 1790780351.211452,
+    "report_timestamp_formatted": "2026-09-30 14:59:11 UTC",
+    "session_start": null,
+    "session_start_formatted": "N/A",
+    "session_end": 1790780351.211448,
+    "session_end_formatted": "2026-09-30 14:59:11 UTC",
+    "total_packets_observed": 18450,
+    "total_alerts": 4,
+    "total_prioritized_alerts": 4
+  },
+  "summary": {
+    "total_alerts": 4,
+    "total_prioritized_alerts": 4,
+    "severity_counts": {
+      "CRITICAL": 0,
+      "HIGH": 2,
+      "MEDIUM": 2,
+      "LOW": 0,
+      "INFO": 0
+    },
+    "priority_distribution": {
+      "P1_CRITICAL": 0,
+      "P2_HIGH": 3,
+      "P3_MEDIUM": 1,
+      "P4_LOW": 0
+    },
+    "average_priority_score": 57.2,
+    "max_priority_score": 71.0,
+    "protocol_breakdown": {
+      "ARP": 1,
+      "TCP": 1,
+      "UDP": 1,
+      "ICMP": 1
+    },
+    "detection_type_breakdown": {
+      "Potential ARP Anomaly": 1,
+      "Potential Port Scan": 1,
+      "Traffic Anomaly": 1,
+      "Unusual ICMP Activity": 1
+    }
+  },
+  "alerts": [
+    {
+      "detection_type": "Potential ARP Anomaly",
+      "alert_id": "4ce9cfe3-a8dc-40a5-a39c-28ac545377de",
+      "timestamp": 1790780306.2025833,
+      "severity": "HIGH",
+      "source": "192.168.1.150",
+      "destination": "192.168.1.1",
+      "protocol": "ARP",
+      "confidence": 0.95,
+      "description": "Host 192.168.1.150 claimed hardware address of default gateway 192.168.1.1.",
+      "evidence": {
+        "ip_address": "192.168.1.1",
+        "previous_mac": "00:11:22:33:44:55",
+        "observed_mac": "aa:bb:cc:dd:ee:ff",
+        "anomaly_subtype": "arp_mapping_change"
+      },
+      "risk_context": "IP address 192.168.1.1 changed its associated hardware address from 00:11:22:33:44:55 to aa:bb:cc:dd:ee:ff. This may indicate ARP spoofing / cache poisoning attempting traffic interception, or benign events such as DHCP reassignment, NIC replacement, or device roaming.",
+      "recommendations": [
+        "Verify the MAC address against the authoritative network asset inventory or DHCP leases.",
+        "Check the physical switch port or wireless AP associated with the suspect MAC address.",
+        "Enable Dynamic ARP Inspection (DAI) and DHCP Snooping on managed network switches.",
+        "Inspect local endpoints for IP address conflicts or unauthorized network devices."
+      ],
+      "detector": "ARPAnomalyDetector",
+      "event_count": 1,
+      "status": "NEW",
+      "first_seen": 1790780306.2025833,
+      "last_seen": 1790780306.2025833
+    },
+    {
+      "detection_type": "Potential Port Scan",
+      "alert_id": "86423d7c-5f39-4aff-9910-6077428ab0ef",
+      "timestamp": 1790780321.2025833,
+      "severity": "MEDIUM",
+      "source": "192.168.1.150",
+      "destination": "192.168.1.1",
+      "protocol": "TCP",
+      "confidence": 0.92,
+      "description": "Host 192.168.1.150 probed 42 distinct destination ports on gateway 192.168.1.1.",
+      "evidence": {
+        "distinct_ports": 42,
+        "scanned_ports": [
+          21,
+          22,
+          23,
+          25,
+          53,
+          80,
+          110,
+          139,
+          443,
+          445,
+          3389,
+          8080
+        ],
+        "duration_sec": 6.8
+      },
+      "risk_context": "Host 192.168.1.150 probed 42 distinct destination ports. This pattern is consistent with automated port scanning or service enumeration, which often precedes targeted service interactions, though legitimate network management tools or multi-port services can produce similar observations.",
+      "recommendations": [
+        "Verify whether the source IP belongs to an authorized security audit or network monitoring tool.",
+        "Review host-based firewall and router ACLs to ensure only necessary ports are accessible.",
+        "Inspect authentication logs on contacted destination systems for suspicious connection attempts.",
+        "Consider applying connection rate limiting or temporary blocking if unauthorized."
+      ],
+      "detector": "PortScanDetector",
+      "event_count": 1,
+      "status": "NEW",
+      "first_seen": 1790780321.2025833,
+      "last_seen": 1790780321.2025833
+    },
+    {
+      "detection_type": "Traffic Anomaly",
+      "alert_id": "01695ef7-47dd-4ba6-be69-e413020f760c",
+      "timestamp": 1790780336.2025833,
+      "severity": "HIGH",
+      "source": "192.168.1.200",
+      "destination": "10.0.0.10",
+      "protocol": "UDP",
+      "confidence": 0.87,
+      "description": "Anomalous traffic burst: 6,500 packets/sec observed (12.8 MB/s).",
+      "evidence": {
+        "pps": 6500.0,
+        "bps": 12800000.0,
+        "violations": {
+          "packets_per_second": {
+            "observed": 6500.0,
+            "threshold": 1000.0
+          }
+        }
+      },
+      "risk_context": "Traffic volume (6500 packets/sec, 12.80 MB/s) significantly exceeded normal baseline thresholds. High traffic spikes can be caused by large legitimate data transfers, media streaming, scheduled system backups, or denial-of-service traffic.",
+      "recommendations": [
+        "Identify the active process or service generating high throughput on the source host.",
+        "Verify if scheduled backups, system updates, or heavy file transfers are in progress.",
+        "Apply Quality of Service (QoS) or bandwidth rate limits to preserve network availability.",
+        "Temporarily isolate the host for forensic inspection if traffic origin cannot be verified."
+      ],
+      "detector": "TrafficAnomalyDetector",
+      "event_count": 1,
+      "status": "NEW",
+      "first_seen": 1790780336.2025833,
+      "last_seen": 1790780336.2025833
+    },
+    {
+      "detection_type": "Unusual ICMP Activity",
+      "alert_id": "f837c951-e110-4663-8844-2481d0f090cd",
+      "timestamp": 1790780346.2025833,
+      "severity": "MEDIUM",
+      "source": "10.0.0.88",
+      "destination": "192.168.1.254",
+      "protocol": "ICMP",
+      "confidence": 0.75,
+      "description": "Ping sweep pattern observed: 55 ICMP echo requests targeting subnet.",
+      "evidence": {
+        "packet_count": 55,
+        "possible_reconnaissance": true,
+        "pattern": "reconnaissance"
+      },
+      "risk_context": "Host 10.0.0.88 transmitted 55 ICMP echo requests across multiple targets. This behaviour is characteristic of host discovery (ping sweep) activity, which may map live systems on the network segment.",
+      "recommendations": [
+        "Confirm if network administrators initiated ping sweeps or path diagnostic tests.",
+        "Configure network perimeter and internal routers to rate-limit ICMP echo request packets.",
+        "Inspect the source endpoint for unauthorized network scanning tools or scripts."
+      ],
+      "detector": "ICMPAnomalyDetector",
+      "event_count": 1,
+      "status": "NEW",
+      "first_seen": 1790780346.2025833,
+      "last_seen": 1790780346.2025833
+    }
+  ],
+  "prioritized_alerts": [
+    {
+      "detection_type": "Potential ARP Anomaly",
+      "alert_id": "4ce9cfe3-a8dc-40a5-a39c-28ac545377de",
+      "timestamp": 1790780306.2025833,
+      "severity": "HIGH",
+      "source": "192.168.1.150",
+      "destination": "192.168.1.1",
+      "protocol": "ARP",
+      "confidence": 0.95,
+      "description": "Host 192.168.1.150 claimed hardware address of default gateway 192.168.1.1.",
+      "evidence": {
+        "ip_address": "192.168.1.1",
+        "previous_mac": "00:11:22:33:44:55",
+        "observed_mac": "aa:bb:cc:dd:ee:ff",
+        "anomaly_subtype": "arp_mapping_change"
+      },
+      "risk_context": "IP address 192.168.1.1 changed its associated hardware address from 00:11:22:33:44:55 to aa:bb:cc:dd:ee:ff. This may indicate ARP spoofing / cache poisoning attempting traffic interception, or benign events such as DHCP reassignment, NIC replacement, or device roaming.",
+      "recommendations": [
+        "Verify the MAC address against the authoritative network asset inventory or DHCP leases.",
+        "Check the physical switch port or wireless AP associated with the suspect MAC address.",
+        "Enable Dynamic ARP Inspection (DAI) and DHCP Snooping on managed network switches.",
+        "Inspect local endpoints for IP address conflicts or unauthorized network devices."
+      ],
+      "detector": "ARPAnomalyDetector",
+      "event_count": 1,
+      "status": "NEW",
+      "first_seen": 1790780306.2025833,
+      "last_seen": 1790780306.2025833,
+      "priority_score": 71.0,
+      "priority_level": "P2_HIGH",
+      "priority_label": "P2 (High)",
+      "priority_reasons": [
+        "Base severity 'HIGH' contributes 30.0 points.",
+        "Detection confidence (0.95) contributes 19.0 points.",
+        "Destination 192.168.1.1 is a designated critical infrastructure asset (+15.0 pts).",
+        "Correlated activity: source 192.168.1.150 also triggered 'Potential Port Scan' (+7.0 pts)."
+      ],
+      "score_breakdown": {
+        "base_severity_score": 30.0,
+        "confidence_score": 19.0,
+        "recurrence_boost": 0.0,
+        "asset_criticality_boost": 15.0,
+        "correlation_boost": 7.0,
+        "total_score": 71.0,
+        "priority_level": "P2_HIGH",
+        "reasons": [
+          "Base severity 'HIGH' contributes 30.0 points.",
+          "Detection confidence (0.95) contributes 19.0 points.",
+          "Destination 192.168.1.1 is a designated critical infrastructure asset (+15.0 pts).",
+          "Correlated activity: source 192.168.1.150 also triggered 'Potential Port Scan' (+7.0 pts)."
+        ]
+      },
+      "priority": "P2_HIGH",
+      "occurrence_count": 1,
+      "recommendation": [
+        "Verify the MAC address against the authoritative network asset inventory or DHCP leases.",
+        "Check the physical switch port or wireless AP associated with the suspect MAC address.",
+        "Enable Dynamic ARP Inspection (DAI) and DHCP Snooping on managed network switches.",
+        "Inspect local endpoints for IP address conflicts or unauthorized network devices."
+      ],
+      "risk_reason": "IP address 192.168.1.1 changed its associated hardware address from 00:11:22:33:44:55 to aa:bb:cc:dd:ee:ff. This may indicate ARP spoofing / cache poisoning attempting traffic interception, or benign events such as DHCP reassignment, NIC replacement, or device roaming. (Prioritization reasons: Base severity 'HIGH' contributes 30.0 points.; Detection confidence (0.95) contributes 19.0 points.; Destination 192.168.1.1 is a designated critical infrastructure asset (+15.0 pts).; Correlated activity: source 192.168.1.150 also triggered 'Potential Port Scan' (+7.0 pts).)",
+      "first_seen_formatted": "2026-09-30 14:58:26 UTC",
+      "last_seen_formatted": "2026-09-30 14:58:26 UTC"
+    },
+    {
+      "detection_type": "Potential Port Scan",
+      "alert_id": "86423d7c-5f39-4aff-9910-6077428ab0ef",
+      "timestamp": 1790780321.2025833,
+      "severity": "MEDIUM",
+      "source": "192.168.1.150",
+      "destination": "192.168.1.1",
+      "protocol": "TCP",
+      "confidence": 0.92,
+      "description": "Host 192.168.1.150 probed 42 distinct destination ports on gateway 192.168.1.1.",
+      "evidence": {
+        "distinct_ports": 42,
+        "scanned_ports": [
+          21,
+          22,
+          23,
+          25,
+          53,
+          80,
+          110,
+          139,
+          443,
+          445,
+          3389,
+          8080
+        ],
+        "duration_sec": 6.8
+      },
+      "risk_context": "Host 192.168.1.150 probed 42 distinct destination ports. This pattern is consistent with automated port scanning or service enumeration, which often precedes targeted service interactions, though legitimate network management tools or multi-port services can produce similar observations.",
+      "recommendations": [
+        "Verify whether the source IP belongs to an authorized security audit or network monitoring tool.",
+        "Review host-based firewall and router ACLs to ensure only necessary ports are accessible.",
+        "Inspect authentication logs on contacted destination systems for suspicious connection attempts.",
+        "Consider applying connection rate limiting or temporary blocking if unauthorized."
+      ],
+      "detector": "PortScanDetector",
+      "event_count": 1,
+      "status": "NEW",
+      "first_seen": 1790780321.2025833,
+      "last_seen": 1790780321.2025833,
+      "priority_score": 60.4,
+      "priority_level": "P2_HIGH",
+      "priority_label": "P2 (High)",
+      "priority_reasons": [
+        "Base severity 'MEDIUM' contributes 20.0 points.",
+        "Detection confidence (0.92) contributes 18.4 points.",
+        "Destination 192.168.1.1 is a designated critical infrastructure asset (+15.0 pts).",
+        "Correlated activity: source 192.168.1.150 also triggered 'Potential ARP Anomaly' (+7.0 pts)."
+      ],
+      "score_breakdown": {
+        "base_severity_score": 20.0,
+        "confidence_score": 18.4,
+        "recurrence_boost": 0.0,
+        "asset_criticality_boost": 15.0,
+        "correlation_boost": 7.0,
+        "total_score": 60.4,
+        "priority_level": "P2_HIGH",
+        "reasons": [
+          "Base severity 'MEDIUM' contributes 20.0 points.",
+          "Detection confidence (0.92) contributes 18.4 points.",
+          "Destination 192.168.1.1 is a designated critical infrastructure asset (+15.0 pts).",
+          "Correlated activity: source 192.168.1.150 also triggered 'Potential ARP Anomaly' (+7.0 pts)."
+        ]
+      },
+      "priority": "P2_HIGH",
+      "occurrence_count": 1,
+      "recommendation": [
+        "Verify whether the source IP belongs to an authorized security audit or network monitoring tool.",
+        "Review host-based firewall and router ACLs to ensure only necessary ports are accessible.",
+        "Inspect authentication logs on contacted destination systems for suspicious connection attempts.",
+        "Consider applying connection rate limiting or temporary blocking if unauthorized."
+      ],
+      "risk_reason": "Host 192.168.1.150 probed 42 distinct destination ports. This pattern is consistent with automated port scanning or service enumeration, which often precedes targeted service interactions, though legitimate network management tools or multi-port services can produce similar observations. (Prioritization reasons: Base severity 'MEDIUM' contributes 20.0 points.; Detection confidence (0.92) contributes 18.4 points.; Destination 192.168.1.1 is a designated critical infrastructure asset (+15.0 pts).; Correlated activity: source 192.168.1.150 also triggered 'Potential ARP Anomaly' (+7.0 pts).)",
+      "first_seen_formatted": "2026-09-30 14:58:41 UTC",
+      "last_seen_formatted": "2026-09-30 14:58:41 UTC"
+    },
+    {
+      "detection_type": "Unusual ICMP Activity",
+      "alert_id": "f837c951-e110-4663-8844-2481d0f090cd",
+      "timestamp": 1790780346.2025833,
+      "severity": "MEDIUM",
+      "source": "10.0.0.88",
+      "destination": "192.168.1.254",
+      "protocol": "ICMP",
+      "confidence": 0.75,
+      "description": "Ping sweep pattern observed: 55 ICMP echo requests targeting subnet.",
+      "evidence": {
+        "packet_count": 55,
+        "possible_reconnaissance": true,
+        "pattern": "reconnaissance"
+      },
+      "risk_context": "Host 10.0.0.88 transmitted 55 ICMP echo requests across multiple targets. This behaviour is characteristic of host discovery (ping sweep) activity, which may map live systems on the network segment.",
+      "recommendations": [
+        "Confirm if network administrators initiated ping sweeps or path diagnostic tests.",
+        "Configure network perimeter and internal routers to rate-limit ICMP echo request packets.",
+        "Inspect the source endpoint for unauthorized network scanning tools or scripts."
+      ],
+      "detector": "ICMPAnomalyDetector",
+      "event_count": 1,
+      "status": "NEW",
+      "first_seen": 1790780346.2025833,
+      "last_seen": 1790780346.2025833,
+      "priority_score": 50.0,
+      "priority_level": "P2_HIGH",
+      "priority_label": "P2 (High)",
+      "priority_reasons": [
+        "Base severity 'MEDIUM' contributes 20.0 points.",
+        "Detection confidence (0.75) contributes 15.0 points.",
+        "Destination 192.168.1.254 is a designated critical infrastructure asset (+15.0 pts)."
+      ],
+      "score_breakdown": {
+        "base_severity_score": 20.0,
+        "confidence_score": 15.0,
+        "recurrence_boost": 0.0,
+        "asset_criticality_boost": 15.0,
+        "correlation_boost": 0.0,
+        "total_score": 50.0,
+        "priority_level": "P2_HIGH",
+        "reasons": [
+          "Base severity 'MEDIUM' contributes 20.0 points.",
+          "Detection confidence (0.75) contributes 15.0 points.",
+          "Destination 192.168.1.254 is a designated critical infrastructure asset (+15.0 pts)."
+        ]
+      },
+      "priority": "P2_HIGH",
+      "occurrence_count": 1,
+      "recommendation": [
+        "Confirm if network administrators initiated ping sweeps or path diagnostic tests.",
+        "Configure network perimeter and internal routers to rate-limit ICMP echo request packets.",
+        "Inspect the source endpoint for unauthorized network scanning tools or scripts."
+      ],
+      "risk_reason": "Host 10.0.0.88 transmitted 55 ICMP echo requests across multiple targets. This behaviour is characteristic of host discovery (ping sweep) activity, which may map live systems on the network segment. (Prioritization reasons: Base severity 'MEDIUM' contributes 20.0 points.; Detection confidence (0.75) contributes 15.0 points.; Destination 192.168.1.254 is a designated critical infrastructure asset (+15.0 pts).)",
+      "first_seen_formatted": "2026-09-30 14:59:06 UTC",
+      "last_seen_formatted": "2026-09-30 14:59:06 UTC"
+    },
+    {
+      "detection_type": "Traffic Anomaly",
+      "alert_id": "01695ef7-47dd-4ba6-be69-e413020f760c",
+      "timestamp": 1790780336.2025833,
+      "severity": "HIGH",
+      "source": "192.168.1.200",
+      "destination": "10.0.0.10",
+      "protocol": "UDP",
+      "confidence": 0.87,
+      "description": "Anomalous traffic burst: 6,500 packets/sec observed (12.8 MB/s).",
+      "evidence": {
+        "pps": 6500.0,
+        "bps": 12800000.0,
+        "violations": {
+          "packets_per_second": {
+            "observed": 6500.0,
+            "threshold": 1000.0
+          }
+        }
+      },
+      "risk_context": "Traffic volume (6500 packets/sec, 12.80 MB/s) significantly exceeded normal baseline thresholds. High traffic spikes can be caused by large legitimate data transfers, media streaming, scheduled system backups, or denial-of-service traffic.",
+      "recommendations": [
+        "Identify the active process or service generating high throughput on the source host.",
+        "Verify if scheduled backups, system updates, or heavy file transfers are in progress.",
+        "Apply Quality of Service (QoS) or bandwidth rate limits to preserve network availability.",
+        "Temporarily isolate the host for forensic inspection if traffic origin cannot be verified."
+      ],
+      "detector": "TrafficAnomalyDetector",
+      "event_count": 1,
+      "status": "NEW",
+      "first_seen": 1790780336.2025833,
+      "last_seen": 1790780336.2025833,
+      "priority_score": 47.4,
+      "priority_level": "P3_MEDIUM",
+      "priority_label": "P3 (Medium)",
+      "priority_reasons": [
+        "Base severity 'HIGH' contributes 30.0 points.",
+        "Detection confidence (0.87) contributes 17.4 points."
+      ],
+      "score_breakdown": {
+        "base_severity_score": 30.0,
+        "confidence_score": 17.4,
+        "recurrence_boost": 0.0,
+        "asset_criticality_boost": 0.0,
+        "correlation_boost": 0.0,
+        "total_score": 47.4,
+        "priority_level": "P3_MEDIUM",
+        "reasons": [
+          "Base severity 'HIGH' contributes 30.0 points.",
+          "Detection confidence (0.87) contributes 17.4 points."
+        ]
+      },
+      "priority": "P3_MEDIUM",
+      "occurrence_count": 1,
+      "recommendation": [
+        "Identify the active process or service generating high throughput on the source host.",
+        "Verify if scheduled backups, system updates, or heavy file transfers are in progress.",
+        "Apply Quality of Service (QoS) or bandwidth rate limits to preserve network availability.",
+        "Temporarily isolate the host for forensic inspection if traffic origin cannot be verified."
+      ],
+      "risk_reason": "Traffic volume (6500 packets/sec, 12.80 MB/s) significantly exceeded normal baseline thresholds. High traffic spikes can be caused by large legitimate data transfers, media streaming, scheduled system backups, or denial-of-service traffic. (Prioritization reasons: Base severity 'HIGH' contributes 30.0 points.; Detection confidence (0.87) contributes 17.4 points.)",
+      "first_seen_formatted": "2026-09-30 14:58:56 UTC",
+      "last_seen_formatted": "2026-09-30 14:58:56 UTC"
+    }
+  ]
+}

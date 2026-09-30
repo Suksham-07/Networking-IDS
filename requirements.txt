@@ -1,4 +1,5 @@
 # NexIDS - Network Intrusion Detection System
+# Supported Python Versions: Python 3.10 to 3.14+
 # Core dependencies
 
 # Packet capture and parsing

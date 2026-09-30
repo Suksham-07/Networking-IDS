@@ -49,6 +49,29 @@ class _ColouredFormatter(logging.Formatter):
         super().__init__(fmt=self._FMT, datefmt=self._DATE_FMT)
 
 
+import re
+
+_SENSITIVE_PATTERNS = [
+    re.compile(r"(password\s*[:=]\s*)['\"]?([^\s'\"]+)['\"]?", re.IGNORECASE),
+    re.compile(r"(token\s*[:=]\s*)['\"]?([^\s'\"]+)['\"]?", re.IGNORECASE),
+    re.compile(r"(secret\s*[:=]\s*)['\"]?([^\s'\"]+)['\"]?", re.IGNORECASE),
+    re.compile(r"(api[-_]?key\s*[:=]\s*)['\"]?([^\s'\"]+)['\"]?", re.IGNORECASE),
+    re.compile(r"(bearer\s+)([a-zA-Z0-9_\-\.]+)", re.IGNORECASE),
+]
+
+
+class SensitiveDataFilter(logging.Filter):
+    """Filters and redacts sensitive credentials, tokens, and keys from log records."""
+
+    def filter(self, record: logging.LogRecord) -> bool:
+        if isinstance(record.msg, str):
+            msg = record.msg
+            for pattern in _SENSITIVE_PATTERNS:
+                msg = pattern.sub(r"\1[REDACTED]", msg)
+            record.msg = msg
+        return True
+
+
 class _PlainFormatter(logging.Formatter):
     """Plain (no colour) formatter for file output."""
 
@@ -86,6 +109,7 @@ def get_logger(name: str, level: int = logging.DEBUG) -> logging.Logger:
     ch = logging.StreamHandler()
     ch.setLevel(level)
     ch.setFormatter(_ColouredFormatter())
+    ch.addFilter(SensitiveDataFilter())
     logger.addHandler(ch)
 
     # --- Rotating file handler ---
@@ -100,6 +124,7 @@ def get_logger(name: str, level: int = logging.DEBUG) -> logging.Logger:
         )
         fh.setLevel(level)
         fh.setFormatter(_PlainFormatter())
+        fh.addFilter(SensitiveDataFilter())
         logger.addHandler(fh)
     except OSError as exc:
         logger.warning("Could not open log file: %s", exc)

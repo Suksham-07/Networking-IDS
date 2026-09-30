@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexIDS Security Audit &amp; Incident Report</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --surface-color: #131b2e;
+            --surface-border: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #38bdf8;
+            --accent-cyan: #06b6d4;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --info: #3b82f6;
+            --success: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid var(--surface-border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .brand-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .brand-badge {
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent-blue);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+
+        .report-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        .header-meta {
+            text-align: right;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .header-meta strong {
+            color: var(--text-primary);
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-radius: 10px;
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+        }
+
+        .stat-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .stat-subtext {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Summary Section */
+        .summary-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        @media (max-width: 800px) {
+            .summary-section {
+                grid-template-columns: 1fr;
+            }
+            .header-meta {
+                text-align: left;
+            }
+        }
+
+        .summary-card {
+            background: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+
+        .summary-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--surface-border);
+            padding-bottom: 0.75rem;
+        }
+
+        .distribution-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .distribution-table th, .distribution-table td {
+            padding: 0.6rem 0.5rem;
+            text-align: left;
+        }
+
+        .distribution-table th {
+            color: var(--text-secondary);
+            font-weight: 600;
+            border-bottom: 1px solid var(--surface-border);
+        }
+
+        .distribution-table td {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .text-right {
+            text-align: right !important;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.55rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-sev-critical { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid #ef4444; }
+        .badge-sev-high { background: rgba(249, 115, 22, 0.2); color: #fdba74; border: 1px solid #f97316; }
+        .badge-sev-medium { background: rgba(234, 179, 8, 0.2); color: #fde047; border: 1px solid #eab308; }
+        .badge-sev-low { background: rgba(14, 165, 233, 0.2); color: #7dd3fc; border: 1px solid #0ea5e9; }
+        .badge-sev-info { background: rgba(148, 163, 184, 0.2); color: #cbd5e1; border: 1px solid #64748b; }
+
+        .badge-pri-p1_critical { background: rgba(239, 68, 68, 0.25); color: #ff8080; border: 1px solid #ef4444; }
+        .badge-pri-p2_high { background: rgba(249, 115, 22, 0.25); color: #ffad66; border: 1px solid #f97316; }
+        .badge-pri-p3_medium { background: rgba(234, 179, 8, 0.25); color: #ffe066; border: 1px solid #eab308; }
+        .badge-pri-p4_low { background: rgba(14, 165, 233, 0.25); color: #80d4ff; border: 1px solid #0ea5e9; }
+
+        .badge-status { background: rgba(255, 255, 255, 0.08); color: var(--text-secondary); border: 1px solid rgba(255, 255, 255, 0.15); }
+
+        /* Alert Cards */
+        .section-header {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1.25rem;
+            color: var(--text-primary);
+        }
+
+        .alert-card {
+            background: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+
+        .alert-card.priority-p1_critical { border-left: 5px solid #ef4444; }
+        .alert-card.priority-p2_high { border-left: 5px solid #f97316; }
+        .alert-card.priority-p3_medium { border-left: 5px solid #eab308; }
+        .alert-card.priority-p4_low { border-left: 5px solid #0ea5e9; }
+
+        .alert-card-header {
+            background: rgba(255, 255, 255, 0.02);
+            border-bottom: 1px solid var(--surface-border);
+            padding: 1rem 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .alert-header-left {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .rank-indicator {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+
+        .alert-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .alert-card-body {
+            padding: 1.25rem;
+        }
+
+        .alert-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.85rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .meta-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .meta-value {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .mono {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        }
+
+        .alert-section {
+            margin-top: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.35rem;
+            letter-spacing: 0.5px;
+        }
+
+        .section-text {
+            font-size: 0.92rem;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        pre {
+            background: #080c14;
+            border: 1px solid var(--surface-border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            overflow-x: auto;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.82rem;
+            color: #38bdf8;
+            margin-top: 0.25rem;
+        }
+
+        .recommendations-list {
+            margin-left: 1.25rem;
+            font-size: 0.92rem;
+            color: var(--text-primary);
+            margin-top: 0.25rem;
+        }
+
+        .recommendations-list li {
+            margin-bottom: 0.35rem;
+        }
+
+        .empty-state {
+            background: var(--surface-color);
+            border: 1px dashed var(--surface-border);
+            border-radius: 10px;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .text-muted {
+            color: var(--text-muted);
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--surface-border);
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div>
+                <div class="brand-title">
+                    <span>NexIDS</span>
+                    <span class="brand-badge">v0.1.0</span>
+                </div>
+                <div class="report-subtitle">NexIDS Security Audit &amp; Incident Report</div>
+            </div>
+            <div class="header-meta">
+                <div>Generated: <strong>2026-09-30 14:46:12 UTC</strong></div>
+                <div>Monitoring: <strong>2026-09-30 14:41:12 UTC &rarr; 2026-09-30 14:46:12 UTC</strong></div>
+            </div>
+        </header>
+
+        <!-- Stats Overview -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-label">Packets Inspected</span>
+                <span class="stat-value">18450</span>
+                <span class="stat-subtext">Total raw traffic volume</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Total Alerts</span>
+                <span class="stat-value">4</span>
+                <span class="stat-subtext">Detection events triggered</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Prioritized Alerts</span>
+                <span class="stat-value">4</span>
+                <span class="stat-subtext">Triaged incidents</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Max Risk Score</span>
+                <span class="stat-value">71.0</span>
+                <span class="stat-subtext">Avg: 57.2 / 100.0</span>
+            </div>
+        </div>
+
+        <!-- Summary Tables -->
+        <div class="summary-section">
+            <div class="summary-card">
+                <div class="summary-title">Alert Severity Distribution</div>
+                <table class="distribution-table">
+                    <thead>
+                        <tr>
+                            <th>Severity</th>
+                            <th class="text-right">Count</th>
+                            <th class="text-right">Share</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge badge-sev-critical">CRITICAL</span></td>
+                            <td class="text-right mono">0</td>
+                            <td class="text-right text-muted">0.0%</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-sev-high">HIGH</span></td>
+                            <td class="text-right mono">2</td>
+                            <td class="text-right text-muted">50.0%</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-sev-medium">MEDIUM</span></td>
+                            <td class="text-right mono">2</td>
+                            <td class="text-right text-muted">50.0%</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-sev-low">LOW</span></td>
+                            <td class="text-right mono">0</td>
+                            <td class="text-right text-muted">0.0%</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-sev-info">INFO</span></td>
+                            <td class="text-right mono">0</td>
+                            <td class="text-right text-muted">0.0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-title">Priority Triage Distribution</div>
+                <table class="distribution-table">
+                    <thead>
+                        <tr>
+                            <th>Priority Tier</th>
+                            <th class="text-right">Count</th>
+                            <th class="text-right">Action Tier</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge badge-pri-p1_critical">P1 (Critical)</span></td>
+                            <td class="text-right mono">0</td>
+                            <td class="text-right text-muted">Immediate response</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-pri-p2_high">P2 (High)</span></td>
+                            <td class="text-right mono">3</td>
+                            <td class="text-right text-muted">Prompt review</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-pri-p3_medium">P3 (Medium)</span></td>
+                            <td class="text-right mono">1</td>
+                            <td class="text-right text-muted">Standard triage</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge badge-pri-p4_low">P4 (Low)</span></td>
+                            <td class="text-right mono">0</td>
+                            <td class="text-right text-muted">Routine log review</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Priority Alerts Section -->
+        <div class="section-header">Prioritized Security Incidents (4)</div>
+        
+                <div class="alert-card priority-p2_high">
+                    <div class="alert-card-header">
+                        <div class="alert-header-left">
+                            <span class="rank-indicator">#1</span>
+                            <span class="badge badge-pri-p2_high">P2_HIGH (71.0 pts)</span>
+                            <span class="badge badge-sev-high">HIGH</span>
+                            <span class="alert-title">Potential ARP Anomaly</span>
+                        </div>
+                        <div class="alert-header-right">
+                            <span class="badge badge-status">NEW</span>
+                            <span class="alert-id mono text-muted">ID: 5e37af0c-8d04-4f3e-a935-743085cb2780</span>
+                        </div>
+                    </div>
+                    <div class="alert-card-body">
+                        <div class="alert-meta-grid">
+                            <div><span class="meta-label">Source:</span> <span class="meta-value mono">192.168.1.150</span></div>
+                            <div><span class="meta-label">Destination:</span> <span class="meta-value mono">192.168.1.1</span></div>
+                            <div><span class="meta-label">Protocol:</span> <span class="meta-value">ARP</span></div>
+                            <div><span class="meta-label">Confidence:</span> <span class="meta-value">95%</span></div>
+                            <div><span class="meta-label">Detector:</span> <span class="meta-value">ARPAnomalyDetector</span></div>
+                            <div><span class="meta-label">Occurrences:</span> <span class="meta-value">1</span></div>
+                            <div><span class="meta-label">Observation Window:</span> <span class="meta-value">2026-09-30 14:46:12 UTC &rarr; 2026-09-30 14:46:12 UTC</span></div>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Observation Summary</div>
+                            <p class="section-text">IP address 192.168.1.1 changed associated MAC address from 00:11:22:33:44:55 to aa:bb:cc:dd:ee:ff.</p>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Risk & Prioritization Reason</div>
+                            <p class="section-text">IP address 192.168.1.1 changed its associated hardware address from 00:11:22:33:44:55 to aa:bb:cc:dd:ee:ff. This may indicate ARP spoofing / cache poisoning attempting traffic interception, or benign events such as DHCP reassignment, NIC replacement, or device roaming. (Prioritization reasons: Base severity &#x27;HIGH&#x27; contributes 30.0 points.; Detection confidence (0.95) contributes 19.0 points.; Destination 192.168.1.1 is a designated critical infrastructure asset (+15.0 pts).; Correlated activity: source 192.168.1.150 also triggered &#x27;Potential Port Scan&#x27; (+7.0 pts).)</p>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Evidence & Telemetry</div>
+                            <pre><code>{
+  &quot;ip_address&quot;: &quot;192.168.1.1&quot;,
+  &quot;previous_mac&quot;: &quot;00:11:22:33:44:55&quot;,
+  &quot;observed_mac&quot;: &quot;aa:bb:cc:dd:ee:ff&quot;,
+  &quot;anomaly_subtype&quot;: &quot;arp_mapping_change&quot;
+}</code></pre>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Actionable Recommendations</div>
+                            <ul class='recommendations-list'><li>Verify the MAC address against the authoritative network asset inventory or DHCP leases.</li><li>Check the physical switch port or wireless AP associated with the suspect MAC address.</li><li>Enable Dynamic ARP Inspection (DAI) and DHCP Snooping on managed network switches.</li><li>Inspect local endpoints for IP address conflicts or unauthorized network devices.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="alert-card priority-p2_high">
+                    <div class="alert-card-header">
+                        <div class="alert-header-left">
+                            <span class="rank-indicator">#2</span>
+                            <span class="badge badge-pri-p2_high">P2_HIGH (60.4 pts)</span>
+                            <span class="badge badge-sev-medium">MEDIUM</span>
+                            <span class="alert-title">Potential Port Scan</span>
+                        </div>
+                        <div class="alert-header-right">
+                            <span class="badge badge-status">NEW</span>
+                            <span class="alert-id mono text-muted">ID: 2a9f626d-4f90-4e2f-b9fa-4be8cf662619</span>
+                        </div>
+                    </div>
+                    <div class="alert-card-body">
+                        <div class="alert-meta-grid">
+                            <div><span class="meta-label">Source:</span> <span class="meta-value mono">192.168.1.150</span></div>
+                            <div><span class="meta-label">Destination:</span> <span class="meta-value mono">192.168.1.1</span></div>
+                            <div><span class="meta-label">Protocol:</span> <span class="meta-value">TCP</span></div>
+                            <div><span class="meta-label">Confidence:</span> <span class="meta-value">92%</span></div>
+                            <div><span class="meta-label">Detector:</span> <span class="meta-value">PortScanDetector</span></div>
+                            <div><span class="meta-label">Occurrences:</span> <span class="meta-value">1</span></div>
+                            <div><span class="meta-label">Observation Window:</span> <span class="meta-value">2026-09-30 14:46:12 UTC &rarr; 2026-09-30 14:46:12 UTC</span></div>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Observation Summary</div>
+                            <p class="section-text">Host 192.168.1.150 probed 35 distinct destination ports on gateway 192.168.1.1.</p>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Risk & Prioritization Reason</div>
+                            <p class="section-text">Host 192.168.1.150 probed 35 distinct destination ports. This pattern is consistent with automated port scanning or service enumeration, which often precedes targeted service interactions, though legitimate network management tools or multi-port services can produce similar observations. (Prioritization reasons: Base severity &#x27;MEDIUM&#x27; contributes 20.0 points.; Detection confidence (0.92) contributes 18.4 points.; Destination 192.168.1.1 is a designated critical infrastructure asset (+15.0 pts).; Correlated activity: source 192.168.1.150 also triggered &#x27;Potential ARP Anomaly&#x27; (+7.0 pts).)</p>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Evidence & Telemetry</div>
+                            <pre><code>{
+  &quot;distinct_ports&quot;: 35,
+  &quot;scanned_ports&quot;: [
+    21,
+    22,
+    23,
+    25,
+    53,
+    80,
+    110,
+    139,
+    443,
+    445,
+    3389,
+    8080
+  ],
+  &quot;duration_sec&quot;: 8.5
+}</code></pre>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Actionable Recommendations</div>
+                            <ul class='recommendations-list'><li>Verify whether the source IP belongs to an authorized security audit or network monitoring tool.</li><li>Review host-based firewall and router ACLs to ensure only necessary ports are accessible.</li><li>Inspect authentication logs on contacted destination systems for suspicious connection attempts.</li><li>Consider applying connection rate limiting or temporary blocking if unauthorized.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="alert-card priority-p2_high">
+                    <div class="alert-card-header">
+                        <div class="alert-header-left">
+                            <span class="rank-indicator">#3</span>
+                            <span class="badge badge-pri-p2_high">P2_HIGH (50.6 pts)</span>
+                            <span class="badge badge-sev-medium">MEDIUM</span>
+                            <span class="alert-title">Unusual ICMP Activity</span>
+                        </div>
+                        <div class="alert-header-right">
+                            <span class="badge badge-status">NEW</span>
+                            <span class="alert-id mono text-muted">ID: bff47f18-43bd-4054-87cd-22d2d09e2dfe</span>
+                        </div>
+                    </div>
+                    <div class="alert-card-body">
+                        <div class="alert-meta-grid">
+                            <div><span class="meta-label">Source:</span> <span class="meta-value mono">10.0.0.88</span></div>
+                            <div><span class="meta-label">Destination:</span> <span class="meta-value mono">192.168.1.254</span></div>
+                            <div><span class="meta-label">Protocol:</span> <span class="meta-value">ICMP</span></div>
+                            <div><span class="meta-label">Confidence:</span> <span class="meta-value">78%</span></div>
+                            <div><span class="meta-label">Detector:</span> <span class="meta-value">ICMPAnomalyDetector</span></div>
+                            <div><span class="meta-label">Occurrences:</span> <span class="meta-value">1</span></div>
+                            <div><span class="meta-label">Observation Window:</span> <span class="meta-value">2026-09-30 14:46:12 UTC &rarr; 2026-09-30 14:46:12 UTC</span></div>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Observation Summary</div>
+                            <p class="section-text">Reconnaissance ping sweep observed from host 10.0.0.88 across 40 target hosts.</p>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Risk & Prioritization Reason</div>
+                            <p class="section-text">Host 10.0.0.88 transmitted 40 ICMP echo requests across multiple targets. This behaviour is characteristic of host discovery (ping sweep) activity, which may map live systems on the network segment. (Prioritization reasons: Base severity &#x27;MEDIUM&#x27; contributes 20.0 points.; Detection confidence (0.78) contributes 15.6 points.; Destination 192.168.1.254 is a designated critical infrastructure asset (+15.0 pts).)</p>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Evidence & Telemetry</div>
+                            <pre><code>{
+  &quot;packet_count&quot;: 40,
+  &quot;possible_reconnaissance&quot;: true,
+  &quot;pattern&quot;: &quot;reconnaissance&quot;
+}</code></pre>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Actionable Recommendations</div>
+                            <ul class='recommendations-list'><li>Confirm if network administrators initiated ping sweeps or path diagnostic tests.</li><li>Configure network perimeter and internal routers to rate-limit ICMP echo request packets.</li><li>Inspect the source endpoint for unauthorized network scanning tools or scripts.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="alert-card priority-p3_medium">
+                    <div class="alert-card-header">
+                        <div class="alert-header-left">
+                            <span class="rank-indicator">#4</span>
+                            <span class="badge badge-pri-p3_medium">P3_MEDIUM (47.0 pts)</span>
+                            <span class="badge badge-sev-high">HIGH</span>
+                            <span class="alert-title">Traffic Anomaly</span>
+                        </div>
+                        <div class="alert-header-right">
+                            <span class="badge badge-status">NEW</span>
+                            <span class="alert-id mono text-muted">ID: 8bd01a59-97b5-4661-86d7-bec0ea3d455d</span>
+                        </div>
+                    </div>
+                    <div class="alert-card-body">
+                        <div class="alert-meta-grid">
+                            <div><span class="meta-label">Source:</span> <span class="meta-value mono">192.168.1.200</span></div>
+                            <div><span class="meta-label">Destination:</span> <span class="meta-value mono">10.0.0.10</span></div>
+                            <div><span class="meta-label">Protocol:</span> <span class="meta-value">UDP</span></div>
+                            <div><span class="meta-label">Confidence:</span> <span class="meta-value">85%</span></div>
+                            <div><span class="meta-label">Detector:</span> <span class="meta-value">TrafficAnomalyDetector</span></div>
+                            <div><span class="meta-label">Occurrences:</span> <span class="meta-value">1</span></div>
+                            <div><span class="meta-label">Observation Window:</span> <span class="meta-value">2026-09-30 14:46:12 UTC &rarr; 2026-09-30 14:46:12 UTC</span></div>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Observation Summary</div>
+                            <p class="section-text">Traffic rate exceeded threshold with 6,200 packets/sec and 12.5 MB/s.</p>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Risk & Prioritization Reason</div>
+                            <p class="section-text">Traffic volume (6200 packets/sec, 12.50 MB/s) significantly exceeded normal baseline thresholds. High traffic spikes can be caused by large legitimate data transfers, media streaming, scheduled system backups, or denial-of-service traffic. (Prioritization reasons: Base severity &#x27;HIGH&#x27; contributes 30.0 points.; Detection confidence (0.85) contributes 17.0 points.)</p>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Evidence & Telemetry</div>
+                            <pre><code>{
+  &quot;pps&quot;: 6200.0,
+  &quot;bps&quot;: 12500000.0,
+  &quot;violations&quot;: {
+    &quot;packets_per_second&quot;: {
+      &quot;observed&quot;: 6200.0,
+      &quot;threshold&quot;: 1000.0
+    }
+  }
+}</code></pre>
+                        </div>
+
+                        <div class="alert-section">
+                            <div class="section-subtitle">Actionable Recommendations</div>
+                            <ul class='recommendations-list'><li>Identify the active process or service generating high throughput on the source host.</li><li>Verify if scheduled backups, system updates, or heavy file transfers are in progress.</li><li>Apply Quality of Service (QoS) or bandwidth rate limits to preserve network availability.</li><li>Temporarily isolate the host for forensic inspection if traffic origin cannot be verified.</li></ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+        <!-- Footer -->
+        <footer>
+            NexIDS v0.1.0 &bull; Defensive Network Intrusion Detection System &bull; Authorised Monitoring Only
+        </footer>
+    </div>
+</body>
+</html>

@@ -29,6 +29,21 @@ SEVERITY_ORDER: dict[str, int] = {
 }
 
 # ---------------------------------------------------------------------------
+# Priority levels (Phase 5 Prioritizer: ordered lowest → highest)
+# ---------------------------------------------------------------------------
+PRIORITY_P4 = "P4_LOW"
+PRIORITY_P3 = "P3_MEDIUM"
+PRIORITY_P2 = "P2_HIGH"
+PRIORITY_P1 = "P1_CRITICAL"
+
+PRIORITY_ORDER: dict[str, int] = {
+    PRIORITY_P4: 1,
+    PRIORITY_P3: 2,
+    PRIORITY_P2: 3,
+    PRIORITY_P1: 4,
+}
+
+# ---------------------------------------------------------------------------
 # Alert types
 # ---------------------------------------------------------------------------
 ALERT_PORT_SCAN = "Potential Port Scan"
@@ -47,28 +62,33 @@ PROTO_IP = "IP"
 PROTO_UNKNOWN = "UNKNOWN"
 
 # ---------------------------------------------------------------------------
-# Detection thresholds (configurable defaults)
+# Detection thresholds (configurable defaults via app.utils.config)
 # ---------------------------------------------------------------------------
-PORT_SCAN_THRESHOLD = 15          # unique ports per source in the window
-PORT_SCAN_WINDOW_SECONDS = 10     # sliding window for port scan detection
+from app.utils.config import get_config
 
-ICMP_FLOOD_THRESHOLD = 50         # ICMP packets per source in the window
-ICMP_WINDOW_SECONDS = 5
+_cfg = get_config()
 
-ARP_SPOOF_MAC_CHANGE = True       # flag if an IP→MAC mapping changes
+PORT_SCAN_THRESHOLD = _cfg.port_scan_threshold
+PORT_SCAN_WINDOW_SECONDS = int(_cfg.port_scan_window_seconds)
 
-TRAFFIC_BYTES_THRESHOLD = 10_000_000   # 10 MB in window flags anomaly
-TRAFFIC_WINDOW_SECONDS = 10
+ICMP_FLOOD_THRESHOLD = _cfg.icmp_flood_threshold
+ICMP_WINDOW_SECONDS = int(_cfg.icmp_window_seconds)
+
+ARP_SPOOF_MAC_CHANGE = _cfg.arp_spoof_mac_change
+
+TRAFFIC_BYTES_THRESHOLD = _cfg.traffic_bytes_threshold
+TRAFFIC_WINDOW_SECONDS = int(_cfg.traffic_window_seconds)
 
 # ---------------------------------------------------------------------------
 # Capture defaults
 # ---------------------------------------------------------------------------
-DEFAULT_CAPTURE_TIMEOUT = 0       # 0 = run until stopped
-DEFAULT_CAPTURE_COUNT = 0         # 0 = unlimited
-DEFAULT_INTERFACE = None          # None = Scapy default / first available
-BPF_FILTER_ALL = ""               # empty = capture everything
+DEFAULT_CAPTURE_TIMEOUT = _cfg.capture_timeout
+DEFAULT_CAPTURE_COUNT = _cfg.capture_limit
+DEFAULT_INTERFACE = _cfg.default_interface
+BPF_FILTER_ALL = _cfg.bpf_filter
 
 # ---------------------------------------------------------------------------
 # Report output paths
 # ---------------------------------------------------------------------------
-REPORTS_DIR = "reports"
+REPORTS_DIR = str(_cfg.reports_dir.name if _cfg.reports_dir.is_absolute() else _cfg.reports_dir)
+

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ project_name }} — Network Intrusion Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Top Navigation & SOC Header -->
+        <header class="navbar">
+            <div class="navbar-brand">
+                <div class="brand-logo">
+                    <span class="shield-icon">&#9670;</span>
+                    <span class="brand-name">{{ project_name }}</span>
+                    <span class="brand-version">v{{ version }}</span>
+                </div>
+                <div class="brand-tagline">Network Intrusion Detection &amp; Alert Prioritization System</div>
+            </div>
+
+            <div class="navbar-actions">
+                <!-- Status & Demo Badges -->
+                <div id="demo-indicator" class="demo-badge hidden">DEMO MODE</div>
+                <div class="status-indicator">
+                    <span id="status-dot" class="dot dot-stopped"></span>
+                    <span id="status-text" class="status-label">STOPPED</span>
+                </div>
+
+                <!-- Controls -->
+                <div class="control-group">
+                    <button id="btn-start" class="btn btn-primary" onclick="startMonitoring()">
+                        &#9658; Start Monitoring
+                    </button>
+                    <button id="btn-stop" class="btn btn-secondary" onclick="stopMonitoring()" disabled>
+                        &#9632; Stop
+                    </button>
+                    <button id="btn-refresh" class="btn btn-outline" onclick="manualRefresh()" title="Refresh telemetry">
+                        &#8635; Refresh
+                    </button>
+                    <button id="btn-demo" class="btn btn-demo" onclick="generateDemoData()" title="Simulate synthetic network traffic &amp; alerts">
+                        &#9881; Load Demo Data
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Notification Banner / Alert Bar -->
+        <div id="notification-banner" class="notification-banner hidden">
+            <span id="notification-message"></span>
+            <button class="banner-close" onclick="dismissNotification()">&times;</button>
+        </div>
+
+        <main class="main-content">
+            <!-- Telemetry Stat Cards -->
+            <section class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Packets Inspected</span>
+                        <span class="stat-icon">&#128225;</span>
+                    </div>
+                    <div class="stat-value" id="val-packets">0</div>
+                    <div class="stat-meta" id="val-elapsed">Elapsed: 0.0s</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-title">Total Alerts</span>
+                        <span class="stat-icon">&#9888;</span>
+                    </div>
+                    <div class="stat-value" id="val-total-alerts">0</div>
+                    <div class="stat-meta" id="val-prioritized-count">0 Prioritized</div>
+                </div>
+
+                <div class="stat-card severity-card-critical">
+                    <div class="stat-header">
+                        <span class="stat-title">CRITICAL</span>
+                        <span class="stat-badge badge-sev-critical">P1</span>
+                    </div>
+                    <div class="stat-value text-critical" id="val-crit-count">0</div>
+                    <div class="stat-meta">Immediate Action</div>
+                </div>
+
+                <div class="stat-card severity-card-high">
+                    <div class="stat-header">
+                        <span class="stat-title">HIGH</span>
+                        <span class="stat-badge badge-sev-high">P2</span>
+                    </div>
+                    <div class="stat-value text-high" id="val-high-count">0</div>
+                    <div class="stat-meta">Prompt Review</div>
+                </div>
+
+                <div class="stat-card severity-card-medium">
+                    <div class="stat-header">
+                        <span class="stat-title">MEDIUM</span>
+                        <span class="stat-badge badge-sev-medium">P3</span>
+                    </div>
+                    <div class="stat-value text-medium" id="val-med-count">0</div>
+                    <div class="stat-meta">Standard Triage</div>
+                </div>
+
+                <div class="stat-card severity-card-low">
+                    <div class="stat-header">
+                        <span class="stat-title">LOW / INFO</span>
+                        <span class="stat-badge badge-sev-low">P4</span>
+                    </div>
+                    <div class="stat-value text-low" id="val-low-count">0</div>
+                    <div class="stat-meta">Routine Log</div>
+                </div>
+            </section>
+
+            <!-- Triage Summary & Report Controls -->
+            <section class="action-bar">
+                <div class="action-bar-left">
+                    <div class="section-title">Prioritized Security Incidents</div>
+                    <div class="section-subtitle">Real-time risk scoring, multi-vector correlation &amp; defensive triage</div>
+                </div>
+                <div class="action-bar-right">
+                    <button class="btn btn-report" onclick="generateReport('json')">
+                        &#128196; Generate JSON Report
+                    </button>
+                    <button class="btn btn-report" onclick="generateReport('html')">
+                        &#127760; Generate HTML Report
+                    </button>
+                </div>
+            </section>
+
+            <!-- Priority Alerts Table Container -->
+            <section class="table-container">
+                <table class="alerts-table" id="alerts-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 70px;">Rank</th>
+                            <th style="width: 130px;">Priority</th>
+                            <th>Alert Type</th>
+                            <th style="width: 100px;">Severity</th>
+                            <th style="width: 110px;">Confidence</th>
+                            <th>Source</th>
+                            <th>Destination</th>
+                            <th style="width: 100px;">Occurrences</th>
+                            <th style="width: 120px;">First Seen</th>
+                            <th style="width: 120px;">Last Seen</th>
+                        </tr>
+                    </thead>
+                    <tbody id="alerts-tbody">
+                        <tr class="empty-row">
+                            <td colspan="10">
+                                <div class="empty-state">
+                                    <div class="empty-icon">&#128737;</div>
+                                    <div class="empty-title">No alerts detected</div>
+                                    <div class="empty-subtitle">Traffic monitoring is passive. Start monitoring or click 'Load Demo Data' to view sample prioritized alerts.</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div>
+                <strong>{{ project_name }}</strong> v{{ version }} &bull; Authorised Network Monitoring &bull; Defensive IDS Only
+            </div>
+            <div class="text-muted">
+                Detections represent potentially unusual activity and must be verified against administrative baseline.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Alert Detail Modal -->
+    <div id="alert-modal" class="modal-backdrop hidden" onclick="handleBackdropClick(event)">
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-header">
+                <div class="modal-header-left">
+                    <span id="modal-rank" class="modal-rank">#1</span>
+                    <span id="modal-priority-badge" class="badge">P2_HIGH</span>
+                    <span id="modal-severity-badge" class="badge">HIGH</span>
+                    <h2 id="modal-title" class="modal-title">Alert Details</h2>
+                </div>
+                <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- Meta grid -->
+                <div class="modal-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Alert ID</span>
+                        <span class="meta-val mono" id="modal-id">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Detector Module</span>
+                        <span class="meta-val" id="modal-detector">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Source Host</span>
+                        <span class="meta-val mono" id="modal-source">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Destination Host</span>
+                        <span class="meta-val mono" id="modal-dest">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Protocol</span>
+                        <span class="meta-val" id="modal-protocol">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Confidence</span>
+                        <span class="meta-val" id="modal-confidence">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Occurrences</span>
+                        <span class="meta-val" id="modal-count">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Lifecycle Status</span>
+                        <span class="meta-val" id="modal-status">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">First Seen</span>
+                        <span class="meta-val" id="modal-first-seen">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Last Seen</span>
+                        <span class="meta-val" id="modal-last-seen">-</span>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Observation Summary</div>
+                    <p id="modal-desc" class="modal-text">-</p>
+                </div>
+
+                <!-- Risk Reason -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Risk Assessment &amp; Prioritization Reasoning</div>
+                    <p id="modal-risk" class="modal-text">-</p>
+                </div>
+
+                <!-- Evidence -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Evidence &amp; Telemetry</div>
+                    <pre><code id="modal-evidence">-</code></pre>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="modal-section">
+                    <div class="modal-section-title">Actionable Recommendations</div>
+                    <ul id="modal-recs" class="modal-recs-list">
+                        <li>No specific recommendations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
